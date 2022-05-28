@@ -1,0 +1,5 @@
+id,cargaison,suivant,precedent,achat,vente,monte,descente,distance_suiv
+1,7,2,,,,90,,1050
+2,7,,1,,7,,90,
+3,3,4,,,,,,1250
+4,3,,3,,3,,45,

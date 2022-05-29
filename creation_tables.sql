@@ -56,7 +56,6 @@ create table cargaison (
 
 create table etape (
   id int primary key,
-  cargaison int,
   suivant int, -- si c'est la premiere ou derniere etape ca peut etre NULL
   precedent int,
   achat int, -- achat vente monte descente pas obligatoire
@@ -65,7 +64,8 @@ create table etape (
   descente int,
   distance_suiv int,
 
-  FOREIGN KEY (cargaison) REFERENCES cargaison(id)
+  FOREIGN KEY (achat) REFERENCES cargaison(id),
+  FOREIGN KEY (vente) REFERENCES cargaison(id)
 );
 
 create table relation(

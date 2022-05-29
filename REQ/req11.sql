@@ -1,6 +1,7 @@
--- Deux requêtes  ́equivalentes exprimant une condition de totalit ́e, l’une avec des sous
--- requêtes correlees et l’autre avec de l’agregation 
+-- Deux requêtes ́equivalentes exprimant une condition de totalité, l’une avec des sous
+-- requêtes correlées et l’autre avec de l’agregation 
 -- AGREGATION
+
 -- Les ids de nations pour lesquels TOUS les navires ont la même nationalité courante
 -- que leur nationalité initiale
 SELECT nationalite_initiale as pays_id FROM (SELECT nationalite_initiale, COUNT(nationalite_initiale) 

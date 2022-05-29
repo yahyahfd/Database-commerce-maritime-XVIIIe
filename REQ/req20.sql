@@ -1,4 +1,4 @@
--- le nombre de cargaisons contenant du rhum ou du tabac
+-- Le nombre de cargaisons contenant du rhum ou du tabac
 SELECT COUNT(id) FROM cargaison
 WHERE produits 
 IN 

@@ -1,5 +1,5 @@
--- Deux requêtes  ́equivalentes exprimant une condition de totalité, l’une avec des sous
--- requêtes correlees et l’autre avec de l’agregation 
+-- Deux requêtes ́equivalentes exprimant une condition de totalité, l’une avec des sous
+-- requêtes correlées et l’autre avec de l’agregation 
 -- CORRELEES
 
 -- Les ids de nations pour lesquels TOUS les navires ont la même nationalité courante

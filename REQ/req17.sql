@@ -1,5 +1,5 @@
--- – une requˆete r ́ecursive (par exemple pour reconstituer le trajet effectu ́e par un cer-
--- tain bateau sur un laps de temps recouvrant des voyages diff ́erents).
+-- – une requête récursive (par exemple pour reconstituer le trajet effectué par un cer-
+-- tain bateau sur un laps de temps recouvrant des voyages différents).
 -- Paires de villes (A,B), tel qu'on peut aller de A à B en n'importe quel nb
 -- d'escales
 WITH RECURSIVE Access(provenance, destination) AS

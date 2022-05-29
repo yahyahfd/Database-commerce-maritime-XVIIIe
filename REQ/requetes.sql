@@ -1,0 +1,44 @@
+-- -- Imaginez 20 questions sur la base de donn ́ees que vous avez mod ́elis ́ee, et  ́ecrivez les
+-- -- requˆetes SQL pour y r ́epondre. L’originalit ́e des questions et la difficult ́e des requˆetes (si
+-- -- tant est que celle-ci soit n ́ecessaire) seront prises en compte dans la notation. Parmi vos
+-- -- requˆetes, il faut au minimum :
+-- -- – une requˆete qui porte sur au moins trois tables ;
+-- Les navires de type Galion de nationalité française et qui ont pour destination un port Français en 4 étapes.
+-- -- – une ’auto jointure’ (jointure de deux copies d’une mˆeme table)
+-- Les navires dont le volume de produit max est aussi un nombre de passagers (voir tp 1)
+-- -- – une sous-requˆete corr ́el ́ee ;
+-- Les navires dont le volume de produit max est aussi un nombre de passagers (voir tp 1)
+-- -- – une sous-requˆete dans le FROM ;
+-- Les navires dont le nombre de passagers est supérieur à n et de type x;
+-- -- – une sous-requˆete dans le WHERE ;
+-- Les navires dont le nombre de passagers est supérieur à n et de type x;
+-- -- – deux agr ́egats n ́ecessitant GROUP BY et HAVING ;
+-- Pour chaque navire, retourner le temps moyen de leurs voyages, à condition que la durée max soit de 3h;
+-- Pour chaque nation, retourner le nombre de navire qui ont pour destination un de ses ports, à condition que ce nombre soit supérieur à 2;
+-- Le nombre doccurence de chaque produit dans des cargaisons, à condition que ça soit supérieur à 5;
+-- -- – une requˆete impliquant le calcul de deux agr ́egats (par exemple, les moyennes d’un
+-- -- ensemble de maximums)
+-- Le nombre de navires Français qui sont au dessus de la durée moyenne des voyages Intercontinentaux.
+-- -- – une jointure externe (LEFT JOIN, RIGHT JOIN ou FULL JOIN) ;
+-- Left join produit et cargaison sur produitID: La liste des produits présents dans aucune cargaison (NULL)
+-- -- – deux requˆetes  ́equivalentes exprimant une condition de totalit ́e, l’une avec des sous
+-- -- requˆetes corr ́el ́ees et l’autre avec de l’agr ́egation
+-- ?
+-- -- – deux requˆetes qui renverraient le mˆeme r ́esultat si vos tables de contenaient pas
+-- -- de nulls, mais qui renvoient des r ́esultats diff ́erents ici (vos donn ́ees devront donc
+-- -- contenir quelques nulls), vous proposerez  ́egalement de petites modifications de vos
+-- -- requˆetes (dans l’esprit de ce qui a  ́et ́e pr ́esent ́e en cours) afin qu’elles retournent le
+-- -- mˆeme r ́esultat
+-- -- 3
+-- SUM renvoie null si il y a un null, donc on fait sum colonne durée
+-- -- L3 Informatique Ann ́ee 2021–2022
+-- -- – une requˆete r ́ecursive (par exemple pour reconstituer le trajet effectu ́e par un cer-
+-- -- tain bateau sur un laps de temps recouvrant des voyages diff ́erents).
+-- ?œ
+-- -- Prenez l’habitude de bien programmer vos requˆetes SQL. Structurez vos requˆetes et sur-
+-- -- tout indentez-les correctement. N’utilisez pas les sous-requˆetes l`a o`u une jointure suffirait.
+-- -- N’utilisez pas les vues si c’est uniquement dans le but de simplifier l’ ́ecriture d’une requˆete
+-- -- complexe.
+-- -- Aussi, il peut ˆetre int ́eressant d’avoir quelques requˆetes donnant des statistiques de com-
+-- -- merces sur une ann ́ee (les passagers transport ́es sur une ann ́ee, les quantit ́es par produit
+-- -- par ann ́ee entre deux ports etc)

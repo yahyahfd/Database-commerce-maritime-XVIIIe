@@ -1,9 +1,9 @@
 id,nom,continent
-1,Sénégal,Afrique
+1,Portugal,Europe
 2,France,Europe
 3,Pays-Bas,Europe
 4,Australie,Océanie
-5,Turquie,Europe
+5,Belgique,Europe
 6,Afrique du Sud,Afrique
 7,Norvège,Europe
 8,Islande,Europe
@@ -12,3 +12,4 @@ id,nom,continent
 11,Brézil,Amérique du Sud
 12,Mexique,Amérique du Sud
 13,Cuba,Amérique du Sud
+14,Allemagne,Europe

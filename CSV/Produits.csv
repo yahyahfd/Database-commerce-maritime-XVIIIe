@@ -2,7 +2,7 @@ id,nom,attribut,duree,valeur_kilo
 1,Orange de Porto,périssable,7,2
 2,Beurre,périssable,120,8
 3,Boisseaux de Sel,sec,0,1.5
-4,Nutella,périssable,12,5
+4,Vinaigre,sec,0,1.90
 5,Savons,sec,0,12
 6,Sucre,sec,0,0.99
 7,Rhum,sec,0,30
@@ -12,4 +12,3 @@ id,nom,attribut,duree,valeur_kilo
 11,Fraise,périssable,7,5
 12,Pates,sec,0,1.99
 13,Riz,sec,0,1.87
-14,Vinaigre,sec,0,1.90

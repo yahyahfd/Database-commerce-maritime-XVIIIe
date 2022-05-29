@@ -4,5 +4,6 @@
 -- requˆetes (dans l’esprit de ce qui a  ́et ́e pr ́esent ́e en cours) afin qu’elles retournent le
 -- mˆeme r ́esultat
 -- 3
--- La moyenne de la capacité de passagers de tous les navires, on remplace les NULL par 0
-SELECT AVG(COALESCE(nb_passagers, 0)) FROM navires;
+-- La moyenne du volume de produits de tous les navires en utilisant 
+-- AVG, et en tenant compte des valeures nulls
+SELECT AVG(COALESCE(volume_produits, 0)) AS avg_prod_fixed FROM navires;

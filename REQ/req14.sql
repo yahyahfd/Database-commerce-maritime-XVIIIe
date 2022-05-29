@@ -4,5 +4,5 @@
 -- requˆetes (dans l’esprit de ce qui a  ́et ́e pr ́esent ́e en cours) afin qu’elles retournent le
 -- mˆeme r ́esultat
 -- 3
--- La moyenne de la capacité de passagers de tous les navires
-SELECT AVG(nb_passagers) FROM navires;
+-- La moyenne du volume de produits de tous les navires en utilisant AVG
+SELECT AVG(volume_produits) AS avg_prod FROM navires;

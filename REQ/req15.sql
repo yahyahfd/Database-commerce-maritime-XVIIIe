@@ -4,5 +4,6 @@
 -- requˆetes (dans l’esprit de ce qui a  ́et ́e pr ́esent ́e en cours) afin qu’elles retournent le
 -- mˆeme r ́esultat
 -- 3
--- La moyenne de la capacité de passagers de tous les navires, on remplace les NULL par 0
-SELECT SUM(COALESCE(nb_passagers,0))/COUNT(id) FROM navires;
+-- La moyenne du volume de produits de tous les navires en utilisant 
+-- SUM et COUNT, et en tenant compte des valeures nulls
+SELECT SUM(COALESCE(volume_produits,0))/COUNT(id) AS avg_prod_fixed FROM navires;

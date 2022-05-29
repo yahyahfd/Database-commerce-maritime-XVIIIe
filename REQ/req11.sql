@@ -4,15 +4,15 @@
 
 -- La liste des ids de nations pour lesquels TOUS les navires ont la même nationalité courante
 --  que leur nationalité initiale
-SELECT nationalite_initiale 
-FROM navires
-GROUP BY nationalite_initiale
-HAVING count(nationalite_initiale)
-=
-SELECT cnt FROM
-(SELECT nationalite_initiale,count(nationalite_initiale) AS cnt FROM navires 
-GROUP BY nationalite_initiale
-HAVING nationalite_initiale = nationalite_courante);
+-- SELECT nationalite_initiale, COUNT(nationalite_initiale) 
+-- FROM navires
+-- GROUP BY nationalite_initiale
+-- HAVING count(nationalite_initiale)
+-- =
+-- SELECT cnt FROM
+-- (SELECT nationalite_initiale,COUNT(nationalite_initiale) FROM navires 
+-- GROUP BY nationalite_initiale, nationalite_courante
+-- HAVING nationalite_initiale = nationalite_courante);
 
 -- test
 -- SELECT cinema
@@ -21,3 +21,11 @@ HAVING nationalite_initiale = nationalite_courante);
 -- HAVING count(DISTINCT titre)
 -- =
 -- (SELECT count(DISTINCT titre) FROM FILM);
+
+-- SELECT a.nati, COUNT(a.nati)
+-- FROM
+-- (SELECT n1.nationalite_initiale AS nati, n2.nationalite_courante
+-- FROM navires n1
+-- JOIN navires n2
+--     ON n1.nationalite_initiale = n2.nationalite_courante) a
+-- GROUP BY a.nati;
